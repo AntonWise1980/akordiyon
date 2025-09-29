@@ -33,3 +33,5 @@ function removeActiveClasses(){
         panel.classList.remove('active')
     })
 }
+
+// teşekkürler Davey seni hiç unutmayacağım. ;)
