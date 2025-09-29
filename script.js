@@ -13,14 +13,18 @@ const panels = document.querySelectorAll('.panel')
 panels.forEach(panel=>{
 //panel itemın her bir item'ına olay dinleyici ekliyorum.
     panel.addEventListener('click', ()=>{
+        
 // click olayı gerçekleştiğinde yapılacak işlemler başlıyor.
 // çağırdığımız fonksiyon ile paneldeki sınıfların hepsini normal panele çeviriyorum
 // böylelikle hepsi panel class oluyor active olan kalmıyor.
-        removeActiveClasses()
+        
+    removeActiveClasses()
+
 // tıklama işlemi gerçekleşti, active classlar silindikten sonra
 // şimdide active classı tekrar ekliyoruz. Böylelikle sadece
 // tıklanan panelin sınıfı active hale gelmiş oluyor.       
-        panel.classList.add('active')
+        
+    panel.classList.add('active')
 
 // event listener içindeki fonkiyonun kapamaları.
     })
@@ -33,5 +37,4 @@ function removeActiveClasses(){
         panel.classList.remove('active')
     })
 }
-
 // teşekkürler Davey seni hiç unutmayacağım. ;)
